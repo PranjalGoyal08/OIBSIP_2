@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    /* background-color: rgb(15, 15, 15); */
+    padding: 20px 0;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.sticky {
+    padding: 10px 0;
+    background-color: rgb(122, 3, 43);
+    z-index: 1;
+}
+
+.max-width {
+    max-width: 1500px;
+    padding: 0 100px;
+    margin: auto;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 35px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.navbar .menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: rgb(247, 247, 247);
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.navbar .menu li a:hover {
+    color: rgb(236, 12, 87);
+}
+
+.sticky .menu li a:hover {
+    color: black;
+}
+
+.menu-btn {
+    display: none;
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    background-color: #fff;
+    height: 4px;
+    margin: 3px;
+}
+
+.home {
+    display: flex;
+    background: url("image/bgg.jpg") no-repeat center center/cover fixed;
+    height: 100vh;
+    color: #ffff;
+    min-height: 500px;
+    scroll-behavior: smooth;
+}
+
+.home .max-width {
+    margin: auto 20px auto 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home .first {
+    text-align: right;
+    font-size: 500px;
+    font-weight: bolder;
+    color: rgb(236, 12, 87);
+    text-shadow: 16px 16px 36px rgb(104, 4, 4);
+    transform: rotate(15deg);
+}
+
+.home .intro {
+    padding-top: 180px;
+}
+
+.home .intro .text-1 {
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.home .intro .text-2 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.home .intro .text-3 {
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+}
+
+.home .intro .text-3 span {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(236, 12, 87);
+}
+
+.home .intro a {
+    border: 2px solid rgb(70, 1, 24);
+    background-color: rgb(236, 12, 87);
+    padding: 12px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #fff;
+    box-shadow: 5px 5px 4px rgb(70, 1, 24);
+}
+
+.home .intro a:hover {
+    color: #111;
+}
+
+.about {
+    background-color: #363636;
+    height: 100%;
+    width: 100%;
+    color: #ffff;
+    padding: 30px 50px 50px 0;
+}
+
+.max-width h2 {
+    margin: 2px 2px 25px 2px;
+    padding: 9px;
+    text-align: center;
+    font-size: 75px;
+    text-decoration: underline 3px;
+}
+
+.about .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 30px;
+}
+.about .max-width {
+    height: 632px;
+    padding: 20px;
+}
+
+.about .about-content .right-side {
+    width: 45%;
+    padding-left: 50px;
+}
+
+.about .about-content .right-side img {
+    height: 480px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about .about-content .left-side {
+    width: 55%;
+    padding: 50px 60px 0 60px;
+}
+
+.about .about-content .left-side .name {
+    font-size: 30px;
+    /* text-align: center; */
+}
+
+.about .about-content .left-side .name span {
+    font-weight: 700;
+    color: rgb(236, 12, 87);
+}
+
+.about .about-content .left-side .about-me {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.about .about-content .left-side a {
+    border: 2px solid rgb(70, 1, 24);
+    background-color: rgb(236, 12, 87);
+    padding: 12px;
+    border-radius: 15px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #fff;
+    box-shadow: 5px 5px 4px rgb(70, 1, 24);
+
+}
+
+.about .about-content .left-side a:hover {
+    color: #111;
+}
+
+.skills{
+    background-color: #363636;
+    height: 690px;
+    width: 100%;
+    color: #ffff;
+    padding-top: 40px;
+}
+.skills-content{
+    font-family: 'Raleway', sans-serif;
+
+    margin: auto;
+    max-width: 700px;
+
+}
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.skill{
+    margin-top: 20px;
+}
+.bar{
+    position: relative;
+ 
+    border: 2px solid #0d96e0;
+ 
+    border-radius: 20px;
+  
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #0d96e0;
+   
+ 
+}
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 80%;
+    }
+}
+#css-bar{
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 80%;
+    }
+}
+#js-bar{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill{
+    100%{
+        width: 75%;
+    }
+}
+#java-bar{
+    animation: java-fill 2s forwards;
+}
+@keyframes java-fill{
+    100%{
+        width: 70%;
+    }
+}
+#php-bar{
+    animation: php-fill 2s forwards;
+}
+@keyframes php-fill{
+    100%{
+        width: 60%;
+    }
+}
+#md-bar{
+    animation: md-fill 2s forwards;
+}
+@keyframes md-fill{
+    100%{
+        width: 60%;
+    }
+}
+#mys-bar{
+    animation: mys-fill 2s forwards;
+}
+@keyframes mys-fill{
+    100%{
+        width: 60%;
+    }
+}
+
+.contact{
+    background-color: #363636;
+    height: 100%;
+    width: 100%;
+    color: #ffff;
+    padding: 30px 50px 50px 0;
+}
+.detail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    font-family: 'Raleway', sans-serif;
+    margin: 20px;
+    margin-left: 110px;
+}
+.detail .leftside{
+    margin: 25px 50px;
+    padding: 25px 50px;
+}
+.leftside .field{
+    padding-top: 15px;
+}
+.leftside .field input{
+    height: 32px;
+    width: 400px;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    outline: none;
+    font-size: 17px;
+}
+.leftside .btn{
+    padding: 5px;
+    margin: 12px auto;
+    width: 180px;
+}
+.leftside .btn button{
+    width: 150px;
+    height: 40px;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: rgb(236, 12, 87);
+    font-size: 20px;
+    color: #fff;
+}
+
+.leftside .btn button:hover {
+    color: #111;
+}
+.detail .rightside{
+    margin: 25px 5px;
+    padding: 25px 5px;
+}
+.rightside .info{
+    margin: 5px;
+    padding: 5px;
+}
+.rightside .ques{
+    font-weight: 800;
+    font-size: 20px;
+    padding: 2px;
+}
